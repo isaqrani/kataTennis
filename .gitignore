@@ -1,0 +1,17 @@
+/kata.iml
+/.idea/compiler.xml
+/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/target/classes/com/kata/tennis/GameScore$1.class
+/target/classes/com/kata/tennis/GameScore$GameScoreBuilder.class
+/target/classes/com/kata/tennis/GameScore.class
+/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/.idea/jarRepositories.xml
+/target/classes/com/kata/tennis/MatchStatus.class
+/.idea/misc.xml
+/target/classes/com/kata/tennis/SetScore$SetScoreBuilder.class
+/target/classes/com/kata/tennis/SetScore.class
+/target/classes/com/kata/tennis/TennisGame.class
+/target/test-classes/com/kata/tennis/TennisGameTest.class
+/.idea/uiDesigner.xml
+/.idea/vcs.xml
+/.idea/workspace.xml

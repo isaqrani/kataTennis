@@ -11,7 +11,7 @@ import java.util.Map;
 public class GameScore {
     private Integer player1CurrentScore;
     private Integer player2CurrentScore;
-    private Boolean tieBreakGame;
+    private final Boolean tieBreakGame;
 
     private static Map<Integer, String> gameScoreSequence = new HashMap() {{
         put(0, "0");

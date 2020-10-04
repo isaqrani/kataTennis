@@ -7,10 +7,10 @@ import java.util.Map;
 
 public class TennisGame {
     @Getter
-    private String player1;
+    private final String player1;
     @Getter
-    private String player2;
-    private Map<Integer, SetScore> sets;
+    private final String player2;
+    private final Map<Integer, SetScore> sets;
     private Integer currentSet;
     private GameScore currentGame;
     private MatchStatus matchStatus;
@@ -20,8 +20,8 @@ public class TennisGame {
         this.player2 = player2;
 
         this.sets = new HashMap<>();
-        this.sets.put(this.currentSet, SetScore.newSet());
         this.currentSet = 1;
+        this.sets.put(this.currentSet, SetScore.newSet());
 
         this.currentGame = GameScore.newGame();
         this.matchStatus = MatchStatus.IN_PROGRESS;

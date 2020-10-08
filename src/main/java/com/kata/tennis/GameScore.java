@@ -13,7 +13,7 @@ public class GameScore {
     private Integer player2CurrentScore;
     private final Boolean tieBreakGame;
 
-    private static Map<Integer, String> gameScoreSequence = new HashMap() {{
+    private static final Map<Integer, String> gameScoreSequence = new HashMap<Integer, String>() {{
         put(0, "0");
         put(1, "15");
         put(2, "30");
@@ -52,8 +52,8 @@ public class GameScore {
                     || (this.player2CurrentScore > 3 && this.player2CurrentScore.equals(this.player1CurrentScore + 1))) {
                 return "Advantage";
             }
-            return this.gameScoreSequence.get(this.player1CurrentScore) + "-"
-                    + this.gameScoreSequence.get(this.player2CurrentScore);
+            return gameScoreSequence.get(this.player1CurrentScore) + "-"
+                    + gameScoreSequence.get(this.player2CurrentScore);
         }
         return this.player1CurrentScore + "-" + this.player2CurrentScore;
     }
